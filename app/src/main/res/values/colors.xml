@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#08B552</color>
+    <color name="colorPrimaryDark">#069C47</color>
+    <color name="colorAccent">#0466C1</color>
+
+    <color name="colorSecondary">#5583BD</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorError">#FF4200</color>
+    <color name="gray">#c7c7c7</color>
+
+    <!--color background-->
+    <color name="bgAmarillo">#ECAE27</color>
+    <color name="bgAzul">#0569C3</color>
+    <color name="bgVerde">#08B34F</color>
+    <color name="bgRojo">#EB0A1D</color>
+    <color name="blue_link">#257df1</color>
+
+
+    <!--color dots-->
+    <array name="array_dot">
+        <item name="dotAmarillo">#FFFFFF</item>
+        <item name="dotAzul">#FFFFFF</item>
+        <item name="dotVerde">#FFFFFF</item>
+        <item name="dotRojo">#FFFFFF</item>
+    </array>
+
+    <array name="array_background">
+        <item>@color/bgAmarillo</item>
+        <item>@color/bgAzul</item>
+        <item>@color/bgVerde</item>
+        <item>@color/bgRojo</item>
+    </array>
+
+    <color name="color_red">#ff0000</color>
+    <color name="color_blue">#0000FF</color>
+    <color name="color_yelow">#e5be01</color>
+    <color name="color_black">#000000</color>
+    <color name="color_greem">#008f39</color>
+</resources>

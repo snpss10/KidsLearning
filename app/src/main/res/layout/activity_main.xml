@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+    >
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="55dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/logo"
+                tools:layout_editor_absoluteY="96dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="16dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_correo"
+                    android:inputType="textEmailAddress"
+                    android:hint=" Correo"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contenidoclave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleDrawable="@drawable/pass_icon_selector"
+                >
+                <EditText
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint=" Contraseña"
+                    android:id="@+id/txt_clave"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="05dp"
+                android:background="@drawable/btn_login_border"
+                android:padding="10dp"
+                android:text="Ingresar"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_nuevo"
+                android:text="Registrarse"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:background="@drawable/button_border"
+                android:textColor="@color/bgAzul"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="05dp" />
+            <TextView
+                android:id="@+id/txt_olvida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:linksClickable="true"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:text="¿Olvidaste tu contraseña?"
+                android:textSize="16sp"
+                android:textColor="@color/bgAzul"
+                android:layout_marginBottom="48dp"
+                />
+
+
+            <TextView
+                android:id="@+id/copyrightTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text=""
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
